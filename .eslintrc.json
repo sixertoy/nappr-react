@@ -1,0 +1,12 @@
+{
+  "extends": ["react-app"],
+  "plugins": ["simple-import-sort", "sort-keys-fix", "sort-destructure-keys"],
+  "rules": {
+    "import/order": "off",
+    "sort-imports": "off",
+    "no-unused-vars": "error",
+    "simple-import-sort/sort": "error",
+    "sort-keys-fix/sort-keys-fix": "warn",
+    "sort-destructure-keys/sort-destructure-keys": "error"
+  }
+}
