@@ -6,6 +6,7 @@ import { terser } from 'rollup-plugin-terser';
 
 import { dependencies, main, peerDependencies } from './package.json';
 
+const isDevelopment = process.env.NODE_ENV !== 'production';
 const nodeExternalBuiltIns = [];
 
 export default {
@@ -17,10 +18,13 @@ export default {
   input: 'src/index.js',
   output: { file: main, format: 'cjs' },
   plugins: [
-    resolve({ preferBuiltins: true }),
+    resolve(),
     commonJS({ include: /node_modules/ }),
     babel({ exclude: 'node_modules/**' }),
+    terser({
+      compress: !isDevelopment,
+      mangle: !isDevelopment,
+    }),
     sizeSnapshot(),
-    terser(),
   ],
 };
