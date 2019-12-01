@@ -1,12 +1,12 @@
 import babel from 'rollup-plugin-babel';
 import commonJS from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
-import { terser } from 'rollup-plugin-terser';
 import { sizeSnapshot } from 'rollup-plugin-size-snapshot';
+import { terser } from 'rollup-plugin-terser';
 
-import { dependencies, peerDependencies, main } from './package.json';
+import { dependencies, main, peerDependencies } from './package.json';
 
-const nodeExternalBuiltIns = ['fs', 'path', 'http', 'https'];
+const nodeExternalBuiltIns = [];
 
 export default {
   external: [
@@ -18,16 +18,8 @@ export default {
   output: { file: main, format: 'cjs' },
   plugins: [
     resolve({ preferBuiltins: true }),
-    commonJS({
-      include: /node_modules/,
-      namedExports: {
-        mongoose: ['Mongoose'],
-      },
-    }),
-    babel({
-      babelrc: false,
-      exclude: 'node_modules/**',
-    }),
+    commonJS({ include: /node_modules/ }),
+    babel({ exclude: 'node_modules/**' }),
     sizeSnapshot(),
     terser(),
   ],
