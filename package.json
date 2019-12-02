@@ -1,6 +1,6 @@
 {
   "name": "@iziges/napper-core-react",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": true,
   "main": "lib/bundle.min.js",
   "homepage": "https://github.com/sixertoy/napper-core-react.git",
