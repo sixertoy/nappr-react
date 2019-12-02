@@ -1,6 +1,6 @@
 {
   "name": "@iziges/napper-core-react",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": true,
   "main": "lib/bundle.min.js",
   "homepage": "https://github.com/sixertoy/napper-core-react.git",
@@ -47,10 +47,10 @@
     "stylelint-scss": "^3.13.0"
   },
   "peerDependencies": {
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
     "classnames": "^2.2.6",
     "node-sass": "^4.12.0",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
     "react-jss": "^10.0.0",
     "react-redux": "^7.1.3",
     "react-sizes": "^2.0.0",
