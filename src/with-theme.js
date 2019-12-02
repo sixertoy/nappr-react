@@ -2,8 +2,9 @@ import React from 'react';
 import { createUseStyles } from 'react-jss';
 import withSizes from 'react-sizes';
 import { compose } from 'redux';
+import { withTheme as withTheming } from 'theming';
 
-export const withStyles = (styles = {}) => {
+export const withTheme = (styles = {}) => {
   const useStyles = createUseStyles(styles);
 
   return WrappedComponent => {
@@ -18,8 +19,8 @@ export const withStyles = (styles = {}) => {
       width,
     });
 
-    return withSizes(mapSizeToProps)(StyledComponent);
+    return compose(withSizes(mapSizeToProps), withTheming)(StyledComponent);
   };
 };
 
-export default withStyles;
+export default withTheme;
