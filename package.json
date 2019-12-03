@@ -53,6 +53,7 @@
     "test": "jest",
     "dev": "rollup -c -w",
     "build": "rm -rf dist && rollup -c --silent",
-    "docs": "docsify serve docs --port 5000"
+    "docs": "docsify serve docs --port 5000",
+    "prepare": "yarn build"
   }
 }
