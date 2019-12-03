@@ -13,8 +13,8 @@ const isDevelopment = process.env.NODE_ENV === 'development';
 
 const plugins = (umd = false) => [
   resolve(),
+  babel({ exclude: 'node_modules/**' }),
   commonJS({ include: /node_modules/ }),
-  babel({ babelrc: false, exclude: 'node_modules/**' }),
   umd ? sizeSnapshot({ printInfo: isDevelopment }) : null,
   terser({ compress: !isDevelopment, mangle: !isDevelopment }),
 ];

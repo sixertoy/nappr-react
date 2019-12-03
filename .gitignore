@@ -179,8 +179,8 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/windows,linux,osx,macos,node,dotenv
 
-# lib/
-# dist/
+lib/
+dist/
 .env.loc
 .env.dev
 .env.prod
