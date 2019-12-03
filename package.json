@@ -8,6 +8,10 @@
   "main": "dist/bundle.min.js",
   "module": "lib/index.js",
   "homepage": "https://github.com/sixertoy/napper-core-react.git",
+  "files": [
+    "./lib",
+    "./dist"
+  ],
   "engines": {
     "node": "^10.6.0 || ^12.13.1"
   },
@@ -53,6 +57,7 @@
     "test": "jest",
     "dev": "rollup -c -w",
     "build": "rm -rf dist && rollup -c --silent",
-    "docs": "docsify serve docs --port 5000"
+    "docs": "docsify serve docs --port 5000",
+    "prepare": "yarn build"
   }
 }
