@@ -1,7 +1,7 @@
+import { compose } from '@iziges/napper-core/lib/fp';
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import withSizes from 'react-sizes';
-import { compose } from 'redux';
 import { withTheme as withTheming } from 'theming';
 
 export const withTheme = (styles = {}) => {

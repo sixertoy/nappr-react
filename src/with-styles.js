@@ -1,7 +1,6 @@
 import React from 'react';
 import { createUseStyles } from 'react-jss';
 import withSizes from 'react-sizes';
-import { compose } from 'redux';
 
 export const withStyles = (styles = {}) => {
   const useStyles = createUseStyles(styles);
