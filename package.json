@@ -12,6 +12,7 @@
     "node": "^10.6.0 || ^12.13.1"
   },
   "peerDependencies": {
+    "prop-types": "^15.7.2",
     "react": ">=16.3.x",
     "react-dom": ">=16.3.x",
     "react-jss": "^10.0.0",

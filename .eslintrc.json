@@ -21,7 +21,8 @@
           "^react-dom$",
           "^react-jss$",
           "^react-sizes$",
-          "^theming$"
+          "^theming$",
+          "^prop-types$"
         ]
       }
     ],
