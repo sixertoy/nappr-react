@@ -24,6 +24,12 @@
     "theming": "^3.2.0"
   },
   "devDependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-jss": "^10.0.0",
+    "react-sizes": "^2.0.0",
+    "theming": "^3.2.0",
     "@babel/core": "^7.7.4",
     "@babel/plugin-proposal-export-default-from": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
@@ -57,7 +63,8 @@
     "cleanup": "rm -rf node_modules && rm yarn.lock",
     "test": "jest",
     "dev": "rollup -c -w",
-    "build": "rm -rf dist && rollup -c --silent",
+    "prebuild": "rm -rf dist",
+    "build": "rollup -c --silent",
     "docs": "docsify serve docs --port 5000",
     "prepare": "yarn build"
   }
