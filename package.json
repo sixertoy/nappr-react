@@ -1,6 +1,6 @@
 {
   "name": "@iziges/napper-core-react",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "description": "React Core Utils",
   "author": "Matthieu Lassalvy <sixertoy.github@gmail.com>",
   "license": "ISC",
@@ -24,12 +24,6 @@
     "theming": "^3.2.0"
   },
   "devDependencies": {
-    "prop-types": "^15.7.2",
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0",
-    "react-jss": "^10.0.0",
-    "react-sizes": "^2.0.0",
-    "theming": "^3.2.0",
     "@babel/core": "^7.7.4",
     "@babel/plugin-proposal-export-default-from": "^7.7.4",
     "@babel/preset-env": "^7.7.4",
@@ -49,12 +43,18 @@
     "husky": "^3.1.0",
     "lint-staged": "^9.5.0",
     "prettier": "^1.13.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0",
+    "react-jss": "^10.0.0",
+    "react-sizes": "^2.0.0",
     "rollup": "^1.27.8",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-size-snapshot": "^0.10.0",
-    "rollup-plugin-terser": "^5.1.2"
+    "rollup-plugin-terser": "^5.1.2",
+    "theming": "^3.2.0"
   },
   "dependencies": {
     "@iziges/napper-core": "https://github.com/sixertoy/napper-core.git"
