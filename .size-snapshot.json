@@ -5,8 +5,8 @@
     "gzipped": 485
   },
   "dist/bundle.min.js": {
-    "bundled": 4897,
-    "minified": 2481,
-    "gzipped": 966
+    "bundled": 4924,
+    "minified": 2547,
+    "gzipped": 991
   }
 }
