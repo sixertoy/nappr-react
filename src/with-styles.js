@@ -15,6 +15,7 @@ export const withStyles = (styles = {}) => {
   return WrappedComponent => {
     const StyledComponent = props => {
       const classes = useStyles({ ...props });
+      // eslint-disable-next-line react/jsx-props-no-spreading
       return <WrappedComponent {...props} classes={classes} />;
     };
 

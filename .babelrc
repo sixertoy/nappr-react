@@ -5,6 +5,6 @@
   ],
   "plugins": [
     "@babel/plugin-proposal-export-default-from",
-    ["module-resolver", { "alias": { "@iziges/napper-core-react": "./src" } }]
+    ["module-resolver", { "alias": { "@iziges/napper-react": "./src" } }]
   ]
 }

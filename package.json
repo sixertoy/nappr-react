@@ -1,5 +1,5 @@
 {
-  "name": "@iziges/napper-core-react",
+  "name": "@iziges/napper-react",
   "version": "0.1.19",
   "description": "React Core Utils",
   "author": "Matthieu Lassalvy <sixertoy.github@gmail.com>",
@@ -7,7 +7,7 @@
   "private": true,
   "main": "dist/bundle.min.js",
   "module": "lib/index.js",
-  "homepage": "https://github.com/sixertoy/napper-core-react.git",
+  "homepage": "https://github.com/sixertoy/napper-react.git",
   "files": [
     "./lib",
     "./dist"
