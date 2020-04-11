@@ -23,6 +23,7 @@ const isProduction = process.env.NODE_ENV === 'production';
 const name = 'nappr-react';
 
 const globals = {
+  'prop-types': 'PropTypes',
   react: 'React',
   'react-dom': 'ReactDom',
   'react-jss': 'ReactJSS',
