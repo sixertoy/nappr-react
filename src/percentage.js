@@ -1,4 +1,4 @@
-import { getPercentage } from '@iziges/napper-core/lib/maths';
+import { getPercentage } from '@nappr/nappr-core/lib/maths';
 import PropTypes from 'prop-types';
 import React from 'react';
 

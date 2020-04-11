@@ -1,7 +1,7 @@
-# Napper React Core Library
+# NAPPR React JS Core Library
 
 ## Install
 
 ```bash
-yarn add https://github.com/sixertoy/napper-core-react.git
+yarn add https://github.com/sixertoy/nappr-react.git
 ```
