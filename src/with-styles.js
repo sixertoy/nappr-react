@@ -2,7 +2,7 @@ import React from 'react';
 import { createUseStyles } from 'react-jss';
 import { withTheme } from 'theming';
 
-export const withStyles = (styles = {}) => {
+const withStyles = (styles = {}) => {
   const useStyles = createUseStyles(styles);
   return WrappedComponent => {
     const StyledComponent = props => {

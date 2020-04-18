@@ -20,13 +20,11 @@ require('dotenv').config();
 
 const isProduction = process.env.NODE_ENV === 'production';
 
-const name = 'nappr-react';
-
 const globals = {
-  'prop-types': 'PropTypes',
   react: 'React',
   'react-dom': 'ReactDom',
   'react-jss': 'ReactJSS',
+  theming: 'theming',
 };
 
 const external = [
@@ -62,21 +60,21 @@ export default {
       file: main,
       format: 'cjs',
       globals,
-      name,
+      name: '@nappr/nappr-react',
       sourcemap: true,
     },
     {
       file: browser,
       format: 'umd',
       globals,
-      name,
+      name: 'NapprReact',
       sourcemap: true,
     },
     {
       file: module,
-      format: 'es',
+      format: 'esm',
       globals,
-      name,
+      name: '@nappr/nappr-react',
       sourcemap: true,
     },
   ],
