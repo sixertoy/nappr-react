@@ -1,11 +1,9 @@
-import { Maths } from '@nappr/nappr-core';
+import { getPercentage } from '@nappr/nappr-core/lib/maths';
 import PropTypes from 'prop-types';
 import React from 'react';
 
 const Percentage = ({ percent, value }) => {
-  const result = 0;
-  console.log('Maths', Maths);
-  // const result = Maths.getPercentage(percent, value);
+  const result = getPercentage(percent, value);
   return <span>{result}&nbsp;%</span>;
 };
 

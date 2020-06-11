@@ -21,6 +21,7 @@ require('dotenv').config();
 const isProduction = process.env.NODE_ENV === 'production';
 
 const globals = {
+  'prop-types': 'PropTypes',
   react: 'React',
   'react-dom': 'ReactDom',
   'react-jss': 'ReactJSS',
