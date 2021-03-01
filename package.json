@@ -53,7 +53,7 @@
     "babel-plugin-named-asset-import": "^0.3.6",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "builtin-modules": "^3.1.0",
-    "docsify": "^4.10.2",
+    "docsify": "^4.12.0",
     "dotenv": "^8.2.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
